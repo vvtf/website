@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-11-19" view-index="0" gantt-divider-location="317" resource-divider-location="300" version="2.8.9" locale="sk_SK">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Názov" width="149" order="0"/>
+        <field id="tpd4" name="Zahájenie" width="59" order="1"/>
+        <field id="tpd5" name="Ukončenie" width="59" order="2"/>
+        <field id="tpd6" name="Trvanie" width="46" order="3"/>
+        <option id="color.recent"><![CDATA[#99ff99]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Názov" width="210" order="0"/>
+        <field id="1" name="Prednastav. rola" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2018" month="12" date="24" type="HOLIDAY"><![CDATA[Holiday on 24.12.2018 0:00]]></date>
+        <date year="2018" month="12" date="25" type="HOLIDAY"><![CDATA[Holiday on 25.12.2018 0:00]]></date>
+        <date year="2018" month="12" date="26" type="HOLIDAY"><![CDATA[Holiday on 26.12.2018 0:00]]></date>
+        <date year="2019" month="1" date="1" type="HOLIDAY"><![CDATA[Holiday on 1.1.2019 0:00]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Analýza požiadavkov" color="#99ff99" meeting="false" start="2018-11-26" duration="15" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="38" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="38" name="Identifikácia funkcií" color="#8cb6ce" meeting="false" start="2018-11-26" duration="5" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="40" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="40" name="Mind mapa" color="#8cb6ce" meeting="false" start="2018-12-03" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="42" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="42" name="HW/SW požiadavky" color="#8cb6ce" meeting="false" start="2018-12-06" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="45" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="45" name="Návrh rozpočtu" color="#8cb6ce" meeting="false" start="2018-12-11" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="48" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="48" name="Ukončenie analýyzy" color="#8cb6ce" meeting="true" start="2018-12-14" duration="0" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="Fáza špecifikácie" color="#99ff99" meeting="false" start="2018-12-17" duration="7" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+            <depend id="54" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="54" name="Špecifikácia funkčných požiadavkov" color="#8cb6ce" meeting="false" start="2018-12-17" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="55" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="55" name="Špecifikácia nefunkčných požiadavkov" color="#8cb6ce" meeting="false" start="2018-12-20" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="68" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="68" name="Ukončenie špecifikácie" color="#8cb6ce" meeting="true" start="2018-12-28" duration="0" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true"/>
+        <task id="9" name="Návrh" color="#99ff99" meeting="false" start="2018-12-31" duration="15" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <depend id="71" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="71" name="Dátový model" color="#8cb6ce" meeting="false" start="2018-12-31" duration="5" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="72" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="72" name="Dátový slovník" color="#8cb6ce" meeting="false" start="2019-01-08" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="73" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="73" name="Use Case diagramy" color="#8cb6ce" meeting="false" start="2019-01-11" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="80" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="80" name="UI sketche" color="#8cb6ce" meeting="false" start="2019-01-16" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="87" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="87" name="Koniec návrhu" color="#8cb6ce" meeting="true" start="2019-01-21" duration="0" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="Implementácia" color="#99ff99" meeting="false" start="2019-01-22" duration="26" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+            <depend id="18" type="3" difference="0" hardness="Strong"/>
+            <depend id="91" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="91" name="Modul Užívateľ" color="#8cb6ce" meeting="false" start="2019-01-22" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="130" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="130" name="Modul Film" color="#8cb6ce" meeting="false" start="2019-01-25" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="134" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="134" name="Modul Rebríček" color="#8cb6ce" meeting="false" start="2019-01-30" duration="4" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="135" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="135" name="Modul Vyhľadávanie" color="#8cb6ce" meeting="false" start="2019-02-05" duration="5" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="148" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="148" name="Implementácia UI" color="#8cb6ce" meeting="false" start="2019-02-12" duration="10" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="156" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="156" name="Ukončenie implementácie" color="#8cb6ce" meeting="true" start="2019-02-26" duration="0" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="Testovanie" color="#99ff99" meeting="false" start="2019-01-30" duration="20" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="165" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="165" name="Príprava test casov" color="#8cb6ce" meeting="false" start="2019-01-30" duration="3" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="169" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="169" name="Exekúcia testov" color="#8cb6ce" meeting="false" start="2019-02-04" duration="16" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="174" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="174" name="Ukončenie testovania" color="#8cb6ce" meeting="true" start="2019-02-26" duration="0" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="Nasadenie zákazníkovi" color="#99ff99" meeting="false" start="2019-02-27" duration="3" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+            <depend id="177" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="177" name="Nasadenie na server" color="#8cb6ce" meeting="false" start="2019-02-27" duration="2" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+            <depend id="182" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="182" name="Ukončenie nasadenia" color="#8cb6ce" meeting="true" start="2019-03-01" duration="0" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

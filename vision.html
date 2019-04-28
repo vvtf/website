@@ -1,0 +1,737 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Greatest movie database in the world" />
+    <meta name="author" content="Brave Students" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lorem Ipsum Films - Vízia</title>
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body data-spy="scroll" data-target="#toc">
+
+    <div id="mindMapModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mindMapModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body">
+                    <img src="data/mindmap/Lorem_Ipsum_Films.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wbsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="wbsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body">
+                    <img src="data/wbs/Lorem_Ipsum_Films_WBS.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="useCaseModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="useCaseModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/usecase/general_usecase.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="decompositionModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="decompositionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/usecase/decomposition_commenting.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bpmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bpmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/bpm/BPM.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="erdModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="erdModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/erd.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kdModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="kdModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/kd/kd.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dfd0Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dfd0ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/dfd/dfd0.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dfd1Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dfd1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/dfd/dfd1.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="seqModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="seqModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/seq.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="clsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/cls.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ganttModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ganttModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/gantt/gantt.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="netModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="netModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/net.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/state.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="movieListModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="movieListModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/mockups/movieList.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="movieDetailModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="movieDetailModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/mockups/movieDetail.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="commentsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="commentsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body center">
+                    <img src="data/mockups/comments.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"
+                        fill="white" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                LIF
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="about.html">O nás</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Naša vízia</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row py-3">
+            <div class="col">
+                <h1 class="display-4 font-weight-normal text-center" data-toc-skip>Naša vízia</h1>
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="col-sm-3">
+                <nav class="sticky-top" id="toc" data-toggle="toc"></nav>
+            </div>
+            <div class="col-sm-9">
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col">
+                            <h2 class="font-weight-normal">Popis domény</h2>
+                            <p>
+                                Oslovil nás zákazník, ktorý reprezentuje nadnárodný konglomerát spoločností
+                                sústredených na tvorbu multimediálneho obsahu, primárne filmov. Náš klient má záujem o
+                                vybudovanie systému na vytvorenie databázy filmov a informácií s nimi spojených, so
+                                sociálnymi prvkami nielen pre svoje potreby, ale aj pre potreby tretích strán
+                                orientujúcich sa v tomto biznise.
+                            </p>
+                            <p>
+                                Kupujúci vyžaduje možnosť evidovať k filmu niekoľko informácií, ktoré s filmom súvisia.
+                                K filmu by malo byť možné asociovať základné informácie ako je jeho názov, dĺžka,
+                                krajina pôvodu, jazyk(y) audia, rok nakrútenia a vydania spolu s jeho kategóriou a
+                                cenami, ktoré snímok získal. S filmom budú spojené aj informácie extrahované zo
+                                sociálnej komponenty systému - užívateľské hodnotenia a komentáre. Nesmie chýbať zoznam
+                                hercov a režisérov. U hercov a režisérov bude systém evidovať zoznam filmov, v ktorých
+                                účinkovali, ich biografiu a získané ocenenia.
+                            </p>
+                            <p>
+                                Zákazník požaduje možnosť pridávať, upravovať a odstraňovať filmy v databáze. V
+                                súvislosti s touto požiadavkou vznikla potreba vytvoriť užívateľov s rôznymi úrovňami
+                                oprávnení.
+                                Po odkonzultovaní našich možností sme sa dohodli na nasledujúcich rolách:
+                                <ol>
+                                    <li>
+                                        <b>Bežný užívateľ</b> - Bude mať oprávnenie filmy, hercov, režisérov atď.
+                                        prezerať a vyhľadávať.
+                                    </li>
+                                    <li>
+                                        <b>Registrovaný užívateľ</b> - Bude mať všetky oprávnenia predchádzajúcej
+                                        skupiny, navyše však bude mať sprístupnené sociálne prvky nášho systému. Tento
+                                        užívateľ bude môcť k jednotlivým filmom v databáze pridávať komentáre a
+                                        hodnotenie. K svojmu profilu si bude môcť vytvoriť zoznamy filmov, ktoré si
+                                        plánuje pozrieť, ktoré videl a ktoré sa mu páčili (zoznam obľúbených filmov).
+                                        Na základe obľúbených filmov mu systém odporučí zoznam podobných filmov.
+                                    </li>
+                                    <li>
+                                        <b>VIU (Very Important User)</b> - Bude mať všetky oprávnenia predchádzajúcej
+                                        skupiny, navyše bude môcť filmy, hercov, režisérov apod. pridávať.
+                                    </li>
+                                    <li>
+                                        <b>Admin</b> - Bude mať všetky oprávnenia predchádzajúcej skupiny, navyše bude
+                                        mať právo prideliť či odobrať rolu VIU registrovanému užívateľovi. Bude
+                                        kontrolovať informácie v prípade pridania nového záznamu a bude vykonávateľom
+                                        schvaľovacieho procesu.
+                                    </li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <h2 class="font-weight-normal">Mind Map</h2>
+                            <img class="img-fluid img-thumbnail" src="data/mindmap/Lorem_Ipsum_Films.png" data-toggle="modal"
+                                data-target="#mindMapModal" />
+                            <small>Vytvorené pomocou <a href="https://coggle.it/">Coggle</a></small>
+                            <details>
+                                <summary>Na stiahnutie</summary>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="data/mindmap/Lorem_Ipsum_Films.png">PNG</a></li>
+                                    <li class="list-inline-item"><a href="data/mindmap/Lorem_Ipsum_Films.pdf">PDF</a></li>
+                                    <li class="list-inline-item"><a href="data/mindmap/Lorem_Ipsum_Films.mm">.mm
+                                            projekt</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <h2 class="font-weight-normal">WBS</h2>
+                            <img class="img-fluid img-thumbnail" src="data/wbs/Lorem_Ipsum_Films_WBS.png" data-toggle="modal"
+                                data-target="#wbsModal" />
+                            <details>
+                                <summary>Na stiahnutie</summary>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="data/wbs/Lorem_Ipsum_Films_WBS.png">PNG</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <h2 class="font-weight-normal">Use case</h2>
+                            <h3 class="font-weight-normal">Lorem Ipsum Films</h3>
+                            <img class="img-fluid img-thumbnail" src="data/usecase/general_usecase.jpg" data-toggle="modal"
+                                data-target="#useCaseModal" />
+                            <details>
+                                <summary>Na stiahnutie</summary>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="data/usecase/general_usecase.jpg">JPG</a></li>
+                                </ul>
+                            </details>
+                            <h3 class="font-weight-normal py-3">Funkčné požiadavky</h3>
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Požiadavok</th>
+                                        <th scope="col">Popis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Registrácia užívateľa</td>
+                                        <td>
+                                            Ešte neregistrovaný užívateľ má možnosť sa registrovať do systému zadaním
+                                            užívateľovho emailu a zvolením užívateľského mena a hesla
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Prihlásenie/odhlásenie užívateľa</td>
+                                        <td>
+                                            Registrovaný užívateľ má možnosť sa do systém prihlásiť resp. sa z neho
+                                            odhlásiť
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Vyhľadávanie</td>
+                                        <td>
+                                            Každý užívateľ má možnosť vyhľadávať filmy, hercov a tvorcov podľa zadaných
+                                            kritérií
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Komentovanie</td>
+                                        <td>
+                                            Registrovaný užívateľ má možnosť komentovať filmy
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Pridávanie filmov do watchlistu</td>
+                                        <td>
+                                            Registrovaný užívateľ má možnosť pridávať filmy do svojho watchlistu
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Zobrazenie rebríčkov</td>
+                                        <td>
+                                            Každý užívateľ má možnosť zobrazovať rebríčky najobľúbenejších a najlepších
+                                            filmov a filtrovať ich podľa zadaných kritérií
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Hodnotenie filmov</td>
+                                        <td>
+                                            Registrovaný užívateľ má možnosť hodnotiť filmy
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Pridávanie filmov</td>
+                                        <td>
+                                            VIU má možnosť pridávať filmy, ktoré musí Admin odsúhlasiť pred zverejnením
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Zobrazenie detailov</td>
+                                        <td>
+                                            Ku každému vyhľadanému záznamu má každý užívateľ možnosť zobraziť detailné
+                                            informácie
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Pridávanie VIU</td>
+                                        <td>
+                                            Admin môže privilegovať registrovaného užívateľa na VIU
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3 class="font-weight-normal py-3">Dekompozícia - Komentovanie</h3>
+                            <img class="img-fluid img-thumbnail" src="data/usecase/decomposition_commenting.jpg"
+                                data-toggle="modal" data-target="#decompositionModal" />
+                            <details>
+                                <summary>Na stiahnutie</summary>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="data/usecase/decomposition_commenting.jpg">JPG</a></li>
+                                </ul>
+                            </details>
+                            <h3 class="font-weight-normal py-3">Štrukúrovaný popis - Pridanie komentára</h3>
+                            <table class="table table-bordered table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Use Case: Pridanie nového komentára
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            ID: 4.1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Stručný popis: Registrovaný užívateľ má možnosť komentovať filmy
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Primárni aktéri: Registrovaný užívateľ, VIU, Admin
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Sekundárni aktéri: -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Predpoklady: Užívateľ je prihlásený
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Main flow:</p>
+                                            <p>
+                                                <ol>
+                                                    <li>Use case začína zobrazením detailov filmu</li>
+                                                    <li>Užívateľ zvolí možnosť pridať komentár</li>
+                                                    <li>Užívateľ vyplní pole “text komentára”</li>
+                                                    <li>Užívateľ odošle formulár</li>
+                                                </ol>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Výsledok: Komentár sa zobrazí pod detailom filmu
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Alternatívny flow:</p>
+                                            <p>
+                                                <ol>
+                                                    <li>Use case začína zobrazením detailov filmu</li>
+                                                    <li>Užívateľ zvolí možnosť pridať komentár</li>
+                                                    <li>Užívateľ vyplní pole “text komentára”</li>
+                                                    <li>Užívateľ zruší rozpracované zmeny</li>
+                                                </ol>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Business Process Model</h2>
+                                <img class="img-fluid img-thumbnail" src="data/bpm/BPM.png" data-toggle="modal"
+                                    data-target="#bpmModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/bpm/BPM.png">PNG</a></li>
+                                        <li class="list-inline-item"><a href="data/bpm/BPM.pdf">PDF</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Entity Relationship Diagram</h2>
+                                <img class="img-fluid img-thumbnail" src="data/erd.jpg" data-toggle="modal" data-target="#erdModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/erd.jpg">JPG</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2>Datový slovník</h2>
+                                <p>FILM=@Id+Název+Kategorie+Délka+Země+Jazyk+Rok+Věkové
+                                    omezení+Popis+Hodnocení+Foto+Trailer+Ocenění+{Herci}+{Tvůrci}+Komentáře</p>
+                                <p>
+                                    Herci=jméno
+                                    Tvůrci=rola+jméno
+                                    Oceněni=rok+název+kategorie+osoba
+                                    Kategorie=název
+                                    Komentář=jméno uživatele+obsah+datum přidaní
+                                    OSOBA=@Id+Jméno+{FILMY}+0{Ocenění}m+Biografie
+                                </p>
+                                <p>
+                                    Oceněni=rok+film+název+kategorie
+                                    UŽIVATEL=@Id+Jméno+Přezdívka+Email+Heslo+Rola+0{Watchlist}m
+                                    Rola=[Admin|VIU|Registrovaný uživatel]
+                                    Watchlist=Název+{Film}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Kontextový diagram</h2>
+                                <img class="img-fluid img-thumbnail" src="data/kd/kd.png" data-toggle="modal"
+                                    data-target="#kdModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/kd/kd.png">PNG</a></li>
+                                        <li class="list-inline-item"><a href="data/kd/kd.pdf">PDF</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">DFD</h2>
+                                <h3 class="font-weight-normal">Level 0</h3>
+                                <img class="img-fluid img-thumbnail" src="data/dfd/dfd0.png" data-toggle="modal"
+                                    data-target="#dfd0Modal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/dfd/dfd0.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                                <h3 class="font-weight-normal">Level 1</h3>
+                                <img class="img-fluid img-thumbnail" src="data/dfd/dfd1.png" data-toggle="modal"
+                                    data-target="#dfd1Modal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/dfd/dfd1.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Sekvenčný diagram</h2>
+                                <img class="img-fluid img-thumbnail" src="data/seq.png" data-toggle="modal" data-target="#seqModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/seq.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Diagram tried</h2>
+                                <img class="img-fluid img-thumbnail" src="data/cls.png" data-toggle="modal" data-target="#clsModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/cls.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Ganttov diagram</h2>
+                                <img class="img-fluid img-thumbnail" src="data/gantt/gantt.png" data-toggle="modal"
+                                    data-target="#ganttModal" />
+                                <small>Vytvorené pomocou <a href="https://www.ganttproject.biz/">GanttProject</a></small>
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/gantt/gantt.png">PNG</a></li>
+                                        <li class="list-inline-item"><a href="data/gantt/gantt.xml">XML project file</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Sieťový diagram</h2>
+                                <img class="img-fluid img-thumbnail" src="data/net.png" data-toggle="modal" data-target="#netModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/net.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Stavový diagram</h2>
+                                <img class="img-fluid img-thumbnail" src="data/state.png" data-toggle="modal"
+                                    data-target="#stateModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/state.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Zoznam udalostí</h2>
+                                <ul>
+                                    <li>Neregistrovaný užívateľ sa registruje (F)</li>
+                                    <li>Neregistrovaný užívateľ vyhľadáva v systéme (F)</li>
+                                    <li>Neregistrovaný užívateľ zobrazuje detaily filmu (F)</li>
+                                    <li>Neregistrovaný užívateľ zobrazuje detaily osoby (F)</li>
+                                    <li>Registrovaný užívateľ sa prihlasuje (F)</li>
+                                    <li>Registrovaný užívateľ sa odhlasuje (F)</li>
+                                    <li>Registrovaný užívateľ vyhľadáva (F)</li>
+                                    <li>Registrovaný užívateľ zobrazuje detaily filmu (F)</li>
+                                    <li>Registrovaný užívateľ zobrazuje detaily osoby (F)</li>
+                                    <li>Registrovaný užívateľ komentuje (F)</li>
+                                    <li>Registrovaný užívateľ hodnotí (F)</li>
+                                    <li>Registrovaný užívateľ zakladá watchlist (F)</li>
+                                    <li>VIU sa prihlasuje (F)</li>
+                                    <li>VIU sa odhlasuje (F)</li>
+                                    <li>VIU vyhľadáva (F)</li>
+                                    <li>VIU zobrazuje detaily filmu (F)</li>
+                                    <li>VIU zobrazuje detaily osoby (F)</li>
+                                    <li>VIU komentuje (F)</li>
+                                    <li>VIU hodnotí (F)</li>
+                                    <li>VIU zakladá watchlist (F)</li>
+                                    <li>VIU vytvára filmy (F)</li>
+                                    <li>Admin sa prihlasuje (F)</li>
+                                    <li>Admin sa odhlasuje (F)</li>
+                                    <li>Admin vyhľadáva (F)</li>
+                                    <li>Admin zobrazuje detaily filmu (F)</li>
+                                    <li>Admin zobrazuje detaily osoby (F)</li>
+                                    <li>Admin komentuje (F)</li>
+                                    <li>Admin hodnotí (F)</li>
+                                    <li>Admin zakladá watchlist (F)</li>
+                                    <li>Admin vytvára filmy (F)</li>
+                                    <li>Admin schvaluje filmy (F)</li>
+                                    <li>Admin pridáva VIU (F)</li>
+                                    <li>Obnovenie zoznamu odporúčaných filmov každý deň (T)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <h2 class="font-weight-normal">Mockupy</h2>
+                                <h3 class="font-weight-normal">Zoznam filmov</h3>
+                                <img class="img-fluid img-thumbnail" src="data/mockups/movieList.png" data-toggle="modal"
+                                    data-target="#movieListModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/mockups/movieList.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                                <h3 class="font-weight-normal">Detail filmu</h3>
+                                <img class="img-fluid img-thumbnail" src="data/mockups/movieDetail.png" data-toggle="modal"
+                                    data-target="#movieDetailModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/mockups/movieDetail.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                                <h3 class="font-weight-normal">Pridanie komentára</h3>
+                                <img class="img-fluid img-thumbnail" src="data/mockups/comments.png" data-toggle="modal"
+                                    data-target="#commentsModal" />
+                                <details>
+                                    <summary>Na stiahnutie</summary>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="data/mockups/comments.png">PNG</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                <small class="d-block mb-3">Lorem Ipsum Films</small>
+                <small class="d-block mb-3 text-muted">&copy; 2018-&infin;</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>O nás</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="about.html">Tím</a></li>
+                    <li><a class="text-muted" href="#">Vízia</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+
+</body>
+
+</html>
