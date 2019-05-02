@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
 </head>
 
@@ -34,6 +34,19 @@
         </div>
     </nav>
 
+    <div id="imgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-3" style="min-width: 100%;">
+            <div class="modal-content" style="min-width: 100%; height: auto;">
+                <div class="modal-body">
+                    <img src="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Zavrieť</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row py-3">
@@ -50,9 +63,120 @@
                     <div class="row py-3">
                         <div class="col">
                             <h2 class="font-weight-normal">Popis domény</h2>
-                            <p>
-                                TBD
+                            <p>S rastúcim dopytom po dostupnom bývaní sa ceny nehnuteľností zvyšujú raketovým tempom.
+                                Výsledkom je stúpajúci počet ľudí, ktorý si nemôžu dovoliť bežné bývanie.</p>
+                            <p>S tým ako sa generácia mileniálov stáva dominantnou v ekonomicky aktívnej populácii je
+                                možné vidieť túžbu byť iný a unikátny. Radi prelamujú konvencie a idú vlastnou cestou.
                             </p>
+                            <p>Naša spoločnosť sa pokúsi zaplniť dieru na trhu medzi dopytom po vlastnom bývaní a
+                                nedostatočným rozpočtom u ľudí s týmito požiadavkami. Nová dodávka premenená na obytný
+                                priestor bude stáť zlomok ceny bytu v centre mesta zatiaľ čo stále umožní ľuďom cestovať
+                                do práce a za relaxom.</p>
+                        </div>
+                    </div>
+
+                    <div class="row py-3">
+                        <div class="col">
+                            <h2 class="font-weight-normal">Vízia</h2>
+                            <p>
+                                Chceme svět, kde každý má svůj domov.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row py-3">
+                        <div class="col">
+                            <h2 class="font-weight-normal">Misia</h2>
+                            <p>
+                                Poskytnout kvalitní a dostupné mobilní bydlení na míru a umožnit lidem žít nezávisle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row py-3">
+                        <div class="col">
+                            <h2 class="font-weight-normal">Ciele a indikátory</h2>
+                            <p>
+                                Abychom naplnili naši vizi, stanovili jsme si následující cíle:
+                            </p>
+                            <ol class="goal">
+                                <li>Rychle vyrábět kvalitní a levné obytné dodávky.
+                                    <ol class="objective">
+                                        <li>Udržovat výhodné partnerské smlouvy s dodavateli.
+                                            <ol class="kri">
+                                                <li>Počet porušených smluvních podmínek ze strany dodavatele nepřesáhne 5 za rok (reklamace, zpoždění dodání, jiná cena, …).</li>
+                                            </ol>
+                                        </li>
+                                        <li>Vyrábět kvalitně.
+                                            <ol class="kri">
+                                                <li>Počet reklamací nepřesáhne 20% prodaných.</li>
+                                                <li>Počet defektů při finální inspekci bude 0.</li>
+                                            </ol>
+                                        </li>
+                                        <li>Sladit objednávku s výrobou, dodavateli a přáním zákazníka.
+                                            <ol class="kri">
+                                                <li>Počet zakázek dokončených po happy path dosáhne 75% v každém roce.</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>Zajistit odbyt vyrobených dodávek.
+                                    <ol class="objective">
+                                        <li>Rozvíjet marketingovou strategii, která osloví potenciální zákazníky.
+                                            <ol class="kri">
+                                                <li>Conversion rate za všechny kanály za první rok dosáhne 2,5%.</li>
+                                            </ol>
+                                        </li>
+                                        <li>Udržovat web neustále přístupný a funkční.
+                                                <ol class="kri">
+                                                        <li>Availabilita webu se udrží na 99% za rok.</li>
+                                                        <li>Počet neočekávaných chyb vyskočivších zákazníkovi při průchodu objednávkou nepřesáhne 0.</li>
+                                                    </ol>
+                                        </li>
+                                        <li>Zvyšovat počet registrovaných uživatelů na webu.
+                                            <ol class="kri">
+                                                <li>Každý měsíc přibude 5 registrovaných uživatelů.</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>Zajistit a udržovat pozitivní cash-flow.
+                                    <ol class="objective">
+                                        <li>Prodávat dodávky, které se vyrobí.
+                                                <ol class="kri">
+                                                        <li>Obrat z prodaných dodávek v prvním roce pokryje alespoň 50% nákladů.</li>
+                                                    </ol>
+                                        </li>
+                                        <li>Pronajímat dodávky, které se neprodají.
+                                                <ol class="kri">
+                                                        <li>Obrat z pronajatých dodávek v prvním roce pokryje alespoň 20% nákladů.</li>
+                                                    </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>Zajistit kvalitní lidské zdroje pro plynulý chod operations.
+                                    <ol class="objective">
+                                        <li>Najmout a udržet potřebný počet zaměstnanců.
+                                                <ol class="kri">
+                                                        <li>Míra přesčasů za týden nepřesáhne 7 MD / week.</li>
+                                                        <li>Zpoždění žádné zakázky nepřesáhne 1 měsíc.</li>
+                                                        <li>V prvním roce nepřesáhne počet výpovědí 3.</li>
+                                                    </ol>
+                                        </li>
+                                        <li>Udržovat kvalitu zaměstnanců na vysoké úrovni.
+                                                <ol class="kri">
+                                                        <li>5% obratu bude vyfakturováno za školení.</li>
+                                                        <li>Zaměstnanci splní školící testy aspoň na 80%.</li>
+                                                    </ol>
+                                        </li>
+                                        <li>Zajistit zaměstnancům bezpečné pracovní podmínky.
+                                                <ol class="kri">
+                                                        <li>Počet pracovních úrazů nepřesáhne 2 za rok.</li>
+                                                    </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -90,7 +214,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#imgModal').on('show.bs.modal', function (e) {
+                var image = $(e.relatedTarget).attr('src');
+                $(".img-fluid").attr("src", image);
+            });
+        });
+    </script>
 
 </body>
 

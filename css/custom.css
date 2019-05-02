@@ -43,6 +43,32 @@
     top: 50px;
   }
   
+  ol.goal { counter-reset: item; }
+  ol.goal li { display: block; }
+  ol.goal li:before {
+    content: "Goal " counter(item) ". ";
+            counter-increment: item;
+            color: blueviolet;
+  }
+
+  ol.objective { counter-reset: item; }
+  ol.objective li { display: block; }
+  ol.objective li:before {
+    content: "Objective " counter(item) ". ";
+            counter-increment: item;
+            color: black;
+            font-weight: bold;
+  }
+
+  ol.kri { counter-reset: item; }
+  ol.kri li { display: block; }
+  ol.kri li:before {
+    content: "KRI " counter(item) ". ";
+            counter-increment: item;
+            color: red;
+            font-weight: normal;
+  }
+
   /* small screens */
   @media (max-width: 768px) {
     /* override stickyness so that the navigation does not follow scrolling */
